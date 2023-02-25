@@ -68,6 +68,9 @@ section h2 {
   font-weight: bold;
 }
 
+ li {
+  list-style-type: none;
+}
 .project {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
