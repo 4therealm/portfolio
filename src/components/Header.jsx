@@ -7,7 +7,6 @@ export default function Header() {
 
   <header className="row">
     <Max />
-    <Navigation />
   </header>
   )
 }
