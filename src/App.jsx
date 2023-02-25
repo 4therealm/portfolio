@@ -1,7 +1,8 @@
 import Header from './components/Header';
-import './App.css';
+
 import Navigation from './components/Navigation'
 import About from './components/About';
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
      <Navigation />
      <main>
       <About />
+      <Portfolio />
      </main>
     </div>
   );

@@ -1,4 +1,4 @@
-const projects = [
+const project = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
@@ -26,7 +26,7 @@ const projects = [
     livePreview: 'https://github.com',
   },
   {
-    name: 'Project 1',
+    name: 'Project 4',
     description:
       'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
     stack: ['SASS', 'TypeScript', 'React'],
@@ -34,15 +34,15 @@ const projects = [
     livePreview: 'https://github.com',
   },
   {
-    name: 'Project 2',
+    name: 'Project 5',
     description:
       'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
     stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    repo: 'https://github.com',
+    live: 'https://github.com',
   },
   {
-    name: 'Project 3',
+    name: 'Project 6',
     description:
       'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
     stack: ['SASS', 'TypeScript', 'React'],
@@ -90,4 +90,4 @@ const about = {
 }
 
 
-export {about, projects, skills}
+export {about, project, skills}

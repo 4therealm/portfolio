@@ -3,9 +3,9 @@ import React from "react";
 export default function Skills({skills}){
   return (
     <div className="row">
-      {skills.map((skills) =>(
-        <div className="skill col" key={skills}>
-          <p>{skills}</p>
+      {skills.map((s) =>(
+        <div className="skill col" key={s}>
+          <p>{s}</p>
         </div>
       ))}
     </div>
