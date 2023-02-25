@@ -1,5 +1,7 @@
 import React from "react";
-import { about } from '../portfolioData'
+import { about, skills } from '../portfolioData'
+import Skills from "./Skills"
+
 
 export default function About() {
   const {name, role, description, resume, social } = about
@@ -14,6 +16,10 @@ export default function About() {
       <li className="col-6"><a href={social.linkedin}>LinkedIn</a></li>
       <li className="col-6"><a href={social.github}>Github</a></li>
     </ul>
+
+    <div>
+      <Skills skills={skills} />
+    </div>
     </section>
   )
 }
