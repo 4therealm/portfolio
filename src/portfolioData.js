@@ -2,52 +2,52 @@ const project = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'Project-Tracker',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'The Project-Tracker is a simple web application for mindmapping. We built this project with the coders in mind. It provides a platform for organizing and project reference all in one place.',
+    stack: ['Express', 'handlebars', 'MySQL2', 'Sequelize', 'Jest', 'Bootstrap', 'JSmind', 'Bcrypt', 'Cors'],
+    sourceCode: 'https://github.com/4therealm/project-tracker-1#built-with',
+    livePreview: 'https://project-tracker-app1.herokuapp.com/',
   },
   {
-    name: 'Project 2',
+    name: 'e-commerce-backend',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      ' This project aims to demonstrate how to connect an Express.js API to a MySQL database using Sequelize, and how to perform basic CRUD (Create, Read, Update, Delete) operations using Insomnia.',
+    stack: ['MySQL2', 'Express', 'Sequelize', 'dotenv', 'Nodejs'],
+    sourceCode: 'https://github.com/4therealm/e-commerce-backend',
+    livePreview: 'https://watch.screencastify.com/v/M05jhF47m1MvsfTmqdrj',
   },
   {
-    name: 'Project 3',
+    name: 'social-media-api',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'an API for my social network that uses a NoSQL database SO THAT my website can handle large amounts of unstructured data',
+    stack: ['Express', 'MongoDB', 'Mongoose', 'Nodejs'],
+    sourceCode: 'https://github.com/4therealm/social-media-api',
+    livePreview: 'https://watch.screencastify.com/v/aSQbWggMF1lgIKdNBmf6',
   },
   {
-    name: 'Project 4',
+    name: 'note-taker',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'A note taking application where users can write, save and deletes notes.',
+    stack: ['Express', 'Nodejs', 'JSON'],
+    sourceCode: 'https://github.com/4therealm/note-taker',
+    livePreview: 'https://note-application.herokuapp.com/',
   },
   {
-    name: 'Project 5',
+    name: 'GuacBottom Recipe Emporium',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    repo: 'https://github.com',
-    live: 'https://github.com',
+      'The purpose of GuacBottom is to provide busy coders like ourselves a website that gives healthy recipe options with a list of ingredients, directions for preparation, and nutritional information for all ingredients',
+    stack: ['Javascript', 'CSS', 'JSON', 'Bootstrap', 'jQuery', 'API'],
+    repo: 'https://github.com/4therealm/GuacBottom',
+    live: 'https://4therealm.github.io/GuacBottom/',
   },
   {
-    name: 'Project 6',
+    name: 'Weather Dashboard',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'A weather forecast app with current weather, and next five days.',
+    stack: ['Javascript', 'API', 'CSS', 'Bootstrap', 'jQuery'],
+    sourceCode: 'https://github.com/4therealm/weather-dashboard',
+    livePreview: 'https://4therealm.github.io/weather-dashboard/',
   },
 ]
 

@@ -1,13 +1,11 @@
 export default function Project({ project }) {
   return (
-    <div className="row">
-      {project.map((p) => (
-
-        <div className="card col-3 m-1" key={p.name}>
-          <div className="card-title">
-            <h3>{p.name}</h3>
-          </div>
-          <div className="card-body">
+    <div className="row row-cols-1 row-cols-md-3 g-4">
+    {project.map((p) => (
+      <div className="col" key={p.name}>
+        <div className="card h-100 d-flex align-items-stretch">
+          <div className="card-body d-flex flex-column">
+            <h5 className="card-title">{p.name}</h5>
             <p className="card-text">{p.description}</p>
             <div className="card-stack row">
               {p.stack.map((s) => (
@@ -16,11 +14,17 @@ export default function Project({ project }) {
                 </div>
               ))}
             </div>
-            <a href={p.livePreview}>Live</a>
-            <a href={p.sourceCode}>Repo</a>
+            <div className="mt-auto">
+              <div className="row links">
+                <div className="col-6 "><a className="project-link" href={p.sourceCode}>Repo</a></div>
+                <div className="col-6 "><a className="project-link" href={p.livePreview}>Live</a></div>
+              </div>
+            </div>
           </div>
         </div>
-      ))}
-    </div>
+      </div>
+    ))}
+  </div>
+  
   );
 }

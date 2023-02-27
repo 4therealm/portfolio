@@ -4,6 +4,8 @@ import Navigation from './components/Navigation'
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 
+import ContactForm from './components/ContactForm'
+
 function App() {
   return (
     <div className="App">
@@ -12,6 +14,7 @@ function App() {
      <main>
       <About />
       <Portfolio />
+      <ContactForm />
      </main>
     </div>
   );
