@@ -1,17 +1,24 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1FBFFF;
+  text-shadow: 0px 4px 10px #1FBFFF;
+}
 
-h1, h2, h3, h4, h5, h6 {
+p {
   color: #1FBFFF;
-  text-shadow:0px 4px 10px #1FBFFF;
+  text-shadow: 0px 4px 10px #1FBFFF;
 }
-p{
-  color: #1FBFFF;
-  text-shadow:0px 4px 10px #1FBFFF;
-}
+
 body {
-background:-webkit-repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%);
-background:-o-repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%);
-background:-moz-repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%);
-background:repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%);
+  /* background-color:rgb(21, 19, 34); */
+  background: -webkit-repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%);
+  background: -o-repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%);
+  background: -moz-repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%);
+  background: repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -19,6 +26,7 @@ background:repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .navbar {
   z-index: 1;
   position: sticky;
@@ -47,6 +55,7 @@ header {
   padding: 1rem;
   margin-bottom: 2rem;
 }
+
 .about-links {
   margin-top: 1rem;
   color: #1FBFFF;
@@ -57,10 +66,12 @@ header {
   transition: all 0.2s ease-in-out;
   border: solid #1FBFFF 2px;
 }
+
 .about-links:hover {
   color: #fff;
   background-color: #1FBFFF;
 }
+
 #portfolio {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 1rem;
@@ -68,6 +79,7 @@ header {
   margin-top: 2rem;
   background-color: #2a2d43d3;
 }
+
 #portfolio .card {
   background-color: #2e004d;
   border: 2px solid #1FBFFF;
@@ -75,26 +87,31 @@ header {
   padding: 1rem;
   margin-bottom: 2rem;
 }
+
 #portfolio .card:hover {
 
-  -webkit-box-shadow:0px 10px 30px 0px #21bfff ;
-  -moz-box-shadow:0px 10px 30px 0px #21bfff ;
-  box-shadow:0px 10px 30px 0px #21bfff ;
+  -webkit-box-shadow: 0px 10px 30px 0px #21bfff;
+  -moz-box-shadow: 0px 10px 30px 0px #21bfff;
+  box-shadow: 0px 10px 30px 0px #21bfff;
 
 }
+
 .card-title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
   text-align: center;
-  border-bottom: 2px solid #1FBFFF; ;
+  border-bottom: 2px solid #1FBFFF;
+  ;
 }
+
 .card-text {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   text-align: center;
   border-bottom: #21bfff 2px solid;
 }
+
 .project-stack {
   font-size: 1.2rem;
   margin-bottom: 1rem;
@@ -103,17 +120,18 @@ header {
 }
 
 .project-stack:last-child {
-   border-right:#21bfff 2px solid;
-  }
+  border-right: #21bfff 2px solid;
+}
 
-  .links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-    text-align: center;
-    /* border-top: #21bfff 2px solid; */
-  }
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  text-align: center;
+  /* border-top: #21bfff 2px solid; */
+}
+
 .project-link {
   margin-top: 1rem;
   color: #1FBFFF;
@@ -124,15 +142,18 @@ header {
   transition: all 0.2s ease-in-out;
   border: solid #1FBFFF 2px;
 }
+
 .project-link:hover {
   color: #fff;
   background-color: #1FBFFF;
 }
+
 section {
   padding: 2rem;
   border: #2e004d 4px solid;
   margin: 5px;
 }
+
 h1 {
   margin: 0;
   font-size: 2rem;
@@ -181,11 +202,12 @@ section h2 {
   font-weight: bold;
 }
 
- li {
+li {
   list-style-type: none;
   margin-bottom: 1rem;
   font-size: 25px;
 }
+
 .project {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -209,6 +231,7 @@ section h2 {
 .project p {
   margin-bottom: 1rem;
 }
+
 #contact {
   background-color: #2a2d43d3;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -217,6 +240,7 @@ section h2 {
   margin-top: 2rem;
   border: #2e004d 4px solid;
 }
+
 form {
   display: flex;
   flex-direction: column;
@@ -226,7 +250,7 @@ form {
 
 label {
   color: #1FBFFF;
-  text-shadow:0px 4px 10px #1FBFFF;
+  text-shadow: 0px 4px 10px #1FBFFF;
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -237,9 +261,10 @@ input {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
-  outline:2px solid #1FBFFF;
+  outline: 2px solid #1FBFFF;
   box-shadow: 0 2px 5px #1FBFFF;
 }
+
 input:focus {
   box-shadow: 0 10px 10px #1FBFFF
 }
@@ -253,6 +278,7 @@ textarea {
   box-shadow: 0 2px 5px #1FBFFF;
   background-color: #2e004d;
 }
+
 textarea:focus {
   box-shadow: 0 10px 10px #1FBFFF
 }
