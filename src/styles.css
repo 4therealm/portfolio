@@ -15,10 +15,19 @@ p {
 
 body {
   /* background-color:rgb(21, 19, 34); */
-  background: -webkit-repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%);
+  /* background: -webkit-repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%);
   background: -o-repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%);
   background: -moz-repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%);
-  background: repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%);
+  background: repeating-linear-gradient(297deg, #2e004d 0%, #ff0000 6%, #08416d 25%); */
+  background: hsla(354, 95%, 24%, 1);
+
+background: linear-gradient(90deg, hsla(354, 95%, 24%, 1) 0%, hsla(234, 70%, 24%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(354, 95%, 24%, 1) 0%, hsla(234, 70%, 24%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(354, 95%, 24%, 1) 0%, hsla(234, 70%, 24%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#76030F", endColorstr="#121B67", GradientType=1 );
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
