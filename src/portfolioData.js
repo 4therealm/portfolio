@@ -89,7 +89,7 @@ const about = {
 
   social: {
     linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    github: 'https://github.com/4therealm',
   },
 }
 
