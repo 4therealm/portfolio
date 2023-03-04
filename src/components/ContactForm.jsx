@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-
-
 function ContactForm() {
   const [formValues, setFormValues] = useState({
     name: "",
@@ -10,6 +8,18 @@ function ContactForm() {
   });
 
   const [notification, setNotification] = useState(null);
+
+  const handleNameChange = (evt) => {
+    setFormValues({ ...formValues, name: evt.target.value });
+  };
+
+  const handleEmailChange = (evt) => {
+    setFormValues({ ...formValues, email: evt.target.value });
+  };
+
+  const handleMessageChange = (evt) => {
+    setFormValues({ ...formValues, message: evt.target.value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,6 +44,20 @@ function ContactForm() {
     }, 3000);
   };
 
+  const isValid = formValues.name !== "" && formValues.email !== "" && formValues.message !== "";
+  const [touched, setTouched] = useState({
+    name: false,
+    email: false,
+    message: false,
+  });
+
+  const handleBlur = (field) => {
+    setTouched({ ...touched, [field]: true });
+    if (formValues[field] === "") {
+      setNotification(`Please fill in the ${field} field`);
+    }
+  };
+
   return (
     <div className="form-container">
       <form id="contact" onSubmit={handleSubmit}>
@@ -42,69 +66,36 @@ function ContactForm() {
           type="text"
           id="name"
           value={formValues.name}
-          onChange={(e) =>
-            setFormValues({ ...formValues, name: e.target.value })
-          }
+          onChange={handleNameChange}
+          onBlur={() => handleBlur("name")}
           required
         />
+        {touched.name && formValues.name === "" && <p>Please fill in the name field</p>}
         <label htmlFor="email">Email</label>
         <input
           type="email"
           id="email"
           value={formValues.email}
-          onChange={(e) =>
-            setFormValues({ ...formValues, email: e.target.value })
-          }
+          onChange={handleEmailChange}
+          onBlur={() => handleBlur("email")}
           required
         />
+        {touched.email && formValues.email === "" && <p>Please fill in the email field</p>}
         <label htmlFor="message">Message</label>
         <textarea
           id="message"
           value={formValues.message}
-          onChange={(e) =>
-            setFormValues({ ...formValues, message: e.target.value })
-          }
+          onChange={handleMessageChange}
+          onBlur={() => handleBlur("message")}
           required
         />
+        {touched.message && formValues.message === "" && <p>Please fill in the message field</p>}
         <button type="submit">Send</button>
-        {notification && <p>{notification}</p>}
+        {touched.name && touched.email && touched.message && (isValid ? "✅" : "❌")}
+        {/* {notification && <p>{notification}</p>} */}
       </form>
     </div>
   );
 }
 
-
-
-
 export default ContactForm;
-// import React, { useRef } from 'react';
-// import emailjs from '@emailjs/browser';
- 
-// const EmailContactForm = () => {
-//  const form = useRef();
- 
-//  const sendEmail = (e) => {
-//    e.preventDefault(); // prevents the page from reloading when you hit “Send”
- 
-//    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-//      .then((result) => {
-//          // show the user a success message
-//      }, (error) => {
-//          // show the user an error
-//      });
-//  };
- 
-//  return (
-//    <form ref={form} onSubmit={sendEmail}>
-//      <label>Name</label>
-//      <input type="text" name="user_name" />
-//      <label>Email</label>
-//      <input type="email" name="user_email" />
-//      <label>Message</label>
-//      <textarea name="message" />
-//      <input type="submit" value="Send" />
-//    </form>
-//  );
-// };
- 
-// export default EmailContactForm;
