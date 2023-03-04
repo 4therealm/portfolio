@@ -15,7 +15,9 @@ function Navigation({ setShowAbout, setShowContact, setShowPortfolio }) {
           <button onClick={() => [setShowContact(true), setShowPortfolio(false), setShowAbout(false)]}>Contact</button>
         </li>
         <li>
-          <ResumeLink />
+          <button>
+            <ResumeLink />
+          </button>
         </li>
       </ul>
     </nav>

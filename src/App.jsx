@@ -4,6 +4,7 @@ import Navigation from './components/Navigation'
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/ContactForm'
+import Footer from './components/Footer'
 
 function App() {
   const [showAbout, setShowAbout] = useState(true);
@@ -23,6 +24,7 @@ function App() {
         {showPortfolio && <Portfolio />}
         {showContact && <ContactForm />}
       </main>
+      <Footer />
     </div>
   );
 }

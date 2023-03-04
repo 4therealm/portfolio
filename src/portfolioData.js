@@ -81,8 +81,12 @@ const about = {
   name: 'Maxwell Walters',
   role: 'Full-stack Developer',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-  resume: 'https://example.com',
+    "My name is Maxwell Walters and I am a web developer based in Lakeville, Minnesota. I am passionate about developing complex, high-quality applications that challenge my creativity and technical skills. I recently completed a Full Stack Web Development Bootcamp at the University of Minnesota, where I gained experience in a variety of technologies such as JavaScript, React.js, Node.js, SQL, MongoDB, and REST APIs. As a team lead for multiple group projects, including ecommerce, project management, and lost pet tracking, I have honed my skills in object-oriented programming, Agile methodology, social coding, and project management. I am a quick learner and am always eager to learn new technologies and frameworks. I am currently seeking a full-time position as a web developer where I can continue to grow my skills and contribute to a team.",
+
+
+
+    
+
   social: {
     linkedin: 'https://linkedin.com',
     github: 'https://github.com',

@@ -1,8 +1,9 @@
 import React from 'react';
 
+
 function ResumeLink() {
   return (
-    <a href="public\assets\newresume.pdf" download="newresume.pdf">Download my resume</a>
+    <a className='res' href="../assets/newresume.pdf" download='newresume.pdf'>Download my resume</a>
   );
 }
 
