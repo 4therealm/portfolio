@@ -5,6 +5,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
+import  {ContactUs}  from './components/TestEmail';
 
 function App() {
   const [showAbout, setShowAbout] = useState(true);
@@ -20,6 +21,7 @@ function App() {
         setShowPortfolio={setShowPortfolio}
       />
       <main>
+        {/* <ContactUs /> */}
         {showAbout && <About />}
         {showPortfolio && <Portfolio />}
         {showContact && <ContactForm />}
