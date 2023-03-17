@@ -5,7 +5,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
-import  {ContactUs}  from './components/TestEmail';
+import  {ContactMe}  from './components/TestEmail';
 
 function App() {
   const [showAbout, setShowAbout] = useState(true);
@@ -24,7 +24,7 @@ function App() {
         {/* <ContactUs /> */}
         {showAbout && <About />}
         {showPortfolio && <Portfolio />}
-        {showContact && <ContactForm />}
+        {showContact && <ContactMe />}
       </main>
       <Footer />
     </div>

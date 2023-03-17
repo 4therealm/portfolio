@@ -1,5 +1,5 @@
 import React from 'react';
-import ResumeLink from './ResumeLink.';
+
 
 function Navigation({ setShowAbout, setShowContact, setShowPortfolio }) {
   return (
@@ -14,11 +14,7 @@ function Navigation({ setShowAbout, setShowContact, setShowPortfolio }) {
         <li>
           <button onClick={() => [setShowContact(true), setShowPortfolio(false), setShowAbout(false)]}>Contact</button>
         </li>
-        <li>
-          <button>
-            <ResumeLink />
-          </button>
-        </li>
+        
       </ul>
     </nav>
   );

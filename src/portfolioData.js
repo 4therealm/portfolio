@@ -88,7 +88,7 @@ const about = {
     
 
   social: {
-    linkedin: 'https://linkedin.com',
+    linkedin: 'https://www.linkedin.com/in/maxwell-walters-0b4392267/',
     github: 'https://github.com/4therealm',
   },
 }
